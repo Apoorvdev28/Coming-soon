@@ -3,127 +3,105 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Coming Soon</title>
-    <style>
-        body {
-            margin: 0;
-            font-family: 'Arial', sans-serif;
-            background: linear-gradient(135deg, #6a11cb, #2575fc);
-            color: #fff;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            overflow: hidden;
-            text-align: center;
-        }
-
-        h1 {
-            font-size: 3rem;
-            margin-bottom: 1rem;
-            animation: fadeIn 2s ease-in-out;
-        }
-
-        p {
-            font-size: 1.2rem;
-            margin-bottom: 2rem;
-            animation: fadeIn 3s ease-in-out;
-        }
-
-        .countdown {
-            display: flex;
-            justify-content: center;
-            gap: 1rem;
-            animation: fadeIn 4s ease-in-out;
-        }
-
-        .countdown div {
-            background: rgba(255, 255, 255, 0.2);
-            padding: 10px 20px;
-            border-radius: 8px;
-            text-align: center;
-        }
-
-        .countdown div span {
-            font-size: 2rem;
-            display: block;
-        }
-
-        @keyframes fadeIn {
-            from {
-                opacity: 0;
-                transform: translateY(20px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-
-        footer {
-            position: absolute;
-            bottom: 10px;
-            width: 100%;
-            text-align: center;
-            font-size: 0.9rem;
-        }
-
-        footer a {
-            color: #fff;
-            text-decoration: underline;
-        }
-    </style>
+    <title>LoanInfo - Your Loan Guide</title>
+    <link rel="stylesheet" href="styles/styles.css">
 </head>
 <body>
-    <div>
-        <h1>We’re Launching Soon!</h1>
-        <p>Stay tuned! Something amazing is on the way.</p>
-        <div class="countdown" id="countdown">
-            <div>
-                <span id="days">15</span>
-                Days
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="images/logo.png" alt="LoanInfo Logo">
             </div>
-            <div>
-                <span id="hours">00</span>
-                Hours
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="loan-types.html">Loan Types</a></li>
+                <li><a href="rates.html">Rates & Terms</a></li>
+                <li><a href="eligibility.html">Eligibility</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <h1>Welcome to LoanInfo</h1>
+            <p>Your one-stop destination for finding the best loan options tailored to your needs.</p>
+            <img src="images/hero-banner.jpg" alt="Hero Banner">
+            <a href="loan-types.html" class="cta-button">Explore Loan Types</a>
+        </section>
+
+        <!-- About Us Section -->
+        <section class="about-us">
+            <h2>About LoanInfo</h2>
+            <p>At LoanInfo, we understand that navigating the world of loans can be challenging. Our mission is to make this process easy, transparent, and stress-free for you. With years of experience, we provide trusted information on personal loans, home loans, auto loans, and more.</p>
+            <p>Whether you are a first-time borrower or looking to refinance, our resources are designed to help you make informed decisions.</p>
+        </section>
+
+        <!-- Features Section -->
+        <section class="features">
+            <h2>Why Choose Us?</h2>
+            <div class="feature-grid">
+                <div class="feature">
+                    <h3>Expert Guidance</h3>
+                    <p>Get access to well-researched loan information curated by industry experts.</p>
+                </div>
+                <div class="feature">
+                    <h3>Compare Options</h3>
+                    <p>We offer side-by-side comparisons of loan rates and terms to help you choose the best fit.</p>
+                </div>
+                <div class="feature">
+                    <h3>Secure & Transparent</h3>
+                    <p>Your data is safe with us. Transparency is at the heart of what we do.</p>
+                </div>
             </div>
-            <div>
-                <span id="minutes">00</span>
-                Minutes
+        </section>
+
+        <!-- Loan Types Overview Section -->
+        <section class="loan-overview">
+            <h2>Explore Loan Types</h2>
+            <p>We cover a wide range of loans to suit your financial goals. Here’s a quick overview:</p>
+            <ul>
+                <li><strong>Personal Loans</strong>: Flexible funding for any purpose.</li>
+                <li><strong>Home Loans</strong>: Achieve your dream of owning a home.</li>
+                <li><strong>Auto Loans</strong>: Get the car you’ve always wanted.</li>
+                <li><strong>Student Loans</strong>: Affordable solutions for your education needs.</li>
+            </ul>
+            <a href="loan-types.html" class="cta-button">Learn More</a>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section class="testimonials">
+            <h2>What Our Clients Say</h2>
+            <div class="testimonial">
+                <p>“LoanInfo made it so easy for me to find the best loan for my new car. Their guidance was clear and concise!”</p>
+                <p><strong>- Emily R.</strong></p>
             </div>
-            <div>
-                <span id="seconds">00</span>
-                Seconds
+            <div class="testimonial">
+                <p>“I was able to compare multiple loan options and find the one that perfectly suited my needs. Highly recommended!”</p>
+                <p><strong>- John D.</strong></p>
             </div>
+        </section>
+
+        <!-- Call-to-Action Section -->
+        <section class="cta">
+            <h2>Ready to Get Started?</h2>
+            <p>Find the right loan today. Let us guide you every step of the way.</p>
+            <a href="contact.html" class="cta-button">Contact Us</a>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-links">
+            <a href="index.html">Home</a> | 
+            <a href="loan-types.html">Loan Types</a> | 
+            <a href="rates.html">Rates</a> | 
+            <a href="eligibility.html">Eligibility</a> | 
+            <a href="faq.html">FAQ</a> | 
+            <a href="contact.html">Contact</a>
         </div>
-        <footer>
-            <p>Contact us at <a href="mailto:info@example.com">apoorvdev28@gmail.com</a></p>
-        </footer>
-    </div>
-
-    <script>
-        // Countdown Timer Logic
-        const launchDate = new Date('2025-01-01T00:00:00').getTime();
-
-        const countdown = setInterval(() => {
-            const now = new Date().getTime();
-            const timeLeft = launchDate - now;
-
-            const days = Math.floor(timeLeft / (1000 * 60 * 60 * 24));
-            const hours = Math.floor((timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-            const minutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
-            const seconds = Math.floor((timeLeft % (1000 * 60)) / 1000);
-
-            document.getElementById('days').innerText = days;
-            document.getElementById('hours').innerText = hours;
-            document.getElementById('minutes').innerText = minutes;
-            document.getElementById('seconds').innerText = seconds;
-
-            if (timeLeft < 0) {
-                clearInterval(countdown);
-                document.querySelector('.countdown').innerHTML = '<h2>We Are Live!</h2>';
-            }
-        }, 1000);
-    </script>
+        <p>&copy; 2024 LoanInfo. All rights reserved.</p>
+    </footer>
 </body>
 </html>
